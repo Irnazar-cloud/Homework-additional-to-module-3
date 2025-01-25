@@ -3,7 +3,6 @@ def calculate_structure_sum(*args):
     first = args[0]
     args = args[1:]
     if isinstance(first, list) or isinstance(first, tuple) or isinstance(first, set):
-        first = list(first)
         args = list(args)
         for i in first:
             args.append(i)
